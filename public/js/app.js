@@ -17271,17 +17271,17 @@ __webpack_require__.r(__webpack_exports__);
       books: [{
         title: 'name of the wind',
         author: 'patrick rothfuss',
-        img: '/public/assets/1.jpg',
+        img: './public/assets/1.jpg',
         isFav: true
       }, {
         title: 'the way of kings',
         author: 'brandon sanderson',
-        img: '/public/assets/2.jpg',
+        img: './public/assets/2.jpg',
         isFav: false
       }, {
         title: 'the final empire',
         author: 'brandon sanderson',
-        img: '/public/assets/3.jpg',
+        img: './public/assets/3.jpg',
         isFav: true
       }]
     };
@@ -17334,12 +17334,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  key: 0
+  key: 0,
+  "class": "py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
 };
 var _hoisted_2 = ["onClick"];
 var _hoisted_3 = ["src", "alt"];
 var _hoisted_4 = {
-  "class": "max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20"
+  "class": "max-w-md py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
 };
 var _hoisted_5 = ["onClick"];
 var _hoisted_6 = ["src", "alt"];
@@ -17353,10 +17354,12 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_9 = [_hoisted_8];
 var _hoisted_10 = {
-  key: 0
+  key: 0,
+  "class": "max-w-sm py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
 };
 var _hoisted_11 = {
-  key: 1
+  key: 1,
+  "class": "max-w-sm py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" This will show a button that gives you the ability to show or hide the books - referring to the script section "), $data.showBooks ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" This here will loop through the items listing all books in the list "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.books, function (book) {
@@ -17408,7 +17411,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   ))])])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, _hoisted_9)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function () {
       return $options.toggleShowBooks && $options.toggleShowBooks.apply($options, arguments);
-    })
+    }),
+    "class": "my-8"
   }, [$data.showBooks ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_10, "Hide books")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_11, "Show books"))])], 64
   /* STABLE_FRAGMENT */
   );
@@ -17425,7 +17429,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var Vue = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({});
+var Vue = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({}); // createApp({App}) // We bound the createapp function to a static function in javascript and called it Vue so we can use a shorter version of it but normally it should look like this.
+
 Vue.component('vue-test', __webpack_require__(/*! ./components/vue-test.vue */ "./resources/js/components/vue-test.vue").default);
 Vue.component('second-component', __webpack_require__(/*! ./components/second-component */ "./resources/js/components/second-component.vue").default);
 Vue.mount("#Vue");
@@ -17448,7 +17453,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\nbody{\n              background: #eee;\n              max-width: 960px;\n              margin: 20px auto;\n}\np, h3, ul{\n              margin: 0;\n              padding: 0;\n}\nli{\n              list-style-type: none;\n              background: #fff;\n              margin: 20px auto;\n              padding: 10px 20px;\n              border-radius: 10px;\n              display: flex;\n              align-items: center;\n              justify-content: space-between;\n}\nli.fav{\n              background: #ff9ed2;\n              color: white;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\nbody{\n              background: #eee;\n              max-width: 960px;\n              margin: 20px auto;\n}\np, h3, ul{\n              margin: 0;\n              padding: 0;\n}\nli{\n              list-style-type: none;\n              background: #fff;\n              margin: 20px auto;\n              padding: 10px 20px;\n              border-radius: 10px;\n              display: flex;\n              align-items: center;\n              justify-content: space-between;\n}\nli.fav{\n              background: #73ff00;\n              color: white;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
