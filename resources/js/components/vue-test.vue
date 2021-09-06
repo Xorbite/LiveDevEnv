@@ -1,6 +1,6 @@
 <template>
         <!-- This will show a button that gives you the ability to show or hide the books - referring to the script section -->
-        <div v-if="showBooks" class="py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20">
+        <div v-if="showBooks" class="px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg">
             <ul>
                 <!-- This here will loop through the items listing all books in the list -->
                 <li v-for="book in books" @click="FavChange(book)" :class="{ fav: book.isFav }" :key="book.id">
@@ -10,7 +10,7 @@
                 </li>
             </ul>
             <!-- This here will filter off the favorite books and put them together in a container -->
-            <div class="max-w-md py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20">
+            <div class="max-w-md px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg">
                 <ul>
                     <li v-for="book in filteredBooks" @click="FavChange(book)" :class="{ fav: book.isFav }" :key="book.id">
                     <img :src="book.img" :alt="book.title">
@@ -27,8 +27,8 @@
         </div>
 
         <button @click="toggleShowBooks" class="my-8">
-            <span v-if="showBooks" class="max-w-sm py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20">Hide books</span>
-            <span v-else class="max-w-sm py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20">Show books</span>
+            <span v-if="showBooks" class="max-w-sm px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg">Hide books</span>
+            <span v-else class="max-w-sm px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg">Show books</span>
         </button>
 
         <SecondComponent />
@@ -57,7 +57,9 @@ export default {
             }
     },
     methods: {
+        // This is the method that will be used in the component
         toggleShowBooks() {
+            // This will toggle the showBooks variable and will reverse it accordingly
         this.showBooks =  !this.showBooks
         },
         FavChange(book) {

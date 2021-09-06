@@ -17312,7 +17312,9 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
+    // This is the method that will be used in the component
     toggleShowBooks: function toggleShowBooks() {
+      // This will toggle the showBooks variable and will reverse it accordingly
       this.showBooks = !this.showBooks;
     },
     FavChange: function FavChange(book) {
@@ -17364,12 +17366,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = {
   key: 0,
-  "class": "py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
+  "class": "px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg"
 };
 var _hoisted_2 = ["onClick"];
 var _hoisted_3 = ["src", "alt"];
 var _hoisted_4 = {
-  "class": "max-w-md py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
+  "class": "max-w-md px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg"
 };
 var _hoisted_5 = ["onClick"];
 var _hoisted_6 = ["src", "alt"];
@@ -17384,11 +17386,11 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 var _hoisted_9 = [_hoisted_8];
 var _hoisted_10 = {
   key: 0,
-  "class": "max-w-sm py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
+  "class": "max-w-sm px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg"
 };
 var _hoisted_11 = {
   key: 1,
-  "class": "max-w-sm py-4 px-8 bg-gray-300 shadow-lg rounded-lg my-20"
+  "class": "max-w-sm px-8 py-4 my-20 bg-gray-300 rounded-lg shadow-lg"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_SecondComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SecondComponent");
