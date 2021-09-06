@@ -1,7 +1,9 @@
 <template>
 
 
-
+    <div>
+        <h1>{{ message }}</h1>
+    </div>
 
 
 </template>
@@ -12,8 +14,17 @@
 
     name:   'SecondComponent'
 
+    export default {
 
+        data() {
+            return {
+                message: 'Hello Vue!'
+            }
+        },
+        methods: {
 
+        }
+    }
 
 </script>
 
@@ -24,3 +35,4 @@
 
 
 </style>
+
