@@ -8,7 +8,7 @@
 
 </template>
 
-
+<!-- // TODO -->
 
 <script>
 
@@ -18,7 +18,7 @@
 
         data() {
             return {
-                message: 'Hello Vue!'
+                message: 'Second component!'
             }
         },
         methods: {
@@ -31,7 +31,13 @@
 
 <style Scoped>
 
-
+h1 {
+    color: #73ff00;
+    text-decoration: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 50px;
+}
 
 
 </style>
